@@ -7,7 +7,7 @@
     Shell.FlyoutBehavior="Disabled"
     Title="AppNotesDanielaMoraMAUI">
 
-    <TabBar>
+    <!--<TabBar>
         <ShellContent
             Title="Notes_DMO"
             ContentTemplate="{DataTemplate views:AllNotesPage_DMO}"
@@ -17,6 +17,32 @@
             Title="About_DMO"
             ContentTemplate="{DataTemplate views:AboutPage_DMO}"
             Icon="{OnPlatform 'icon_about_dm.png', iOS='icon_about_ios_dm.png', MacCatalyst='icon_about_ios_dm.png'}" />
-    </TabBar>
+    </TabBar>-->
+
+    <ShellItem Route="MainPage">
+        <ShellSection Title="Home">
+            <ShellContent ContentTemplate="{DataTemplate views:Dirrecion_DM}" />
+        </ShellSection>
+    </ShellItem>
+
+    <ShellItem Route="GaleriaServicios">
+        <ShellSection Title="Galeria">
+            <ShellContent ContentTemplate="{DataTemplate views:Longitud}" />
+        </ShellSection>
+    </ShellItem>
+
+    <ShellItem Route="PaginaPrincipal">
+        <ShellSection Title="Página Principal">
+            <ShellContent ContentTemplate="{DataTemplate views:Moneda}" />
+        </ShellSection>
+    </ShellItem>
+
+    <ShellItem Route="PaginaPrincipal">
+        <ShellSection Title="Página Principal">
+            <ShellContent ContentTemplate="{DataTemplate views:Volumen}" />
+        </ShellSection>
+    </ShellItem>
+
+
 
 </Shell>

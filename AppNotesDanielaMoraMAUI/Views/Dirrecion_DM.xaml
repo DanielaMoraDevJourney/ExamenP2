@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppNotesDanielaMoraMAUI.Views.Dirrecion_DM"
+             Title="Dirrecion_DM">
+    <ScrollView>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Image Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Start"
+                   HeightRequest="70" Margin="0,10,-5,-2"
+                   Source="https://media.primicias.ec/2022/02/04094454/RGB_LOGO-UDLA_2021_ROJO.png" />
+                <StackLayout Margin="90,80,90,0" HorizontalOptions="Center">
+                    <Label FontAttributes="Bold"
+                       WidthRequest="233"
+                       HeightRequest="70"
+                       FontFamily="PoppinsBold"
+                       FontSize="Title"
+                       Text="Bienvenido al convertidor!"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                        Margin="0,0,0,25"
+                       />
+
+                    <Button BackgroundColor="#8D2232"
+                        WidthRequest="350"
+                        HeightRequest="45"
+                        FontFamily="PoppinsSemiBold" 
+                        FontSize="Medium"
+                        Text="Volumen"
+                        Clicked="ClickVolumen"
+                        TextColor="White"
+                        Margin="0,0,0,20"
+         
+                        >
+                    </Button>
+
+                    <Button BackgroundColor="#8D2232"           
+                         WidthRequest="350"
+                         HeightRequest="40"
+                         FontFamily="PoppinsMedium" 
+                         FontSize="13"
+                         Text="Moneda"
+                         Clicked="ClickMoneda"
+                         TextColor="White"
+                         Margin="0,0,0,40"
+          
+ >
+                    </Button>
+
+                    <Button BackgroundColor="#8D2232"           
+                     WidthRequest="350"
+                     HeightRequest="40"
+                     FontFamily="PoppinsMedium" 
+                     FontSize="13"
+                     Text="Longitud"
+                     Clicked="ClickLongitud"
+                     TextColor="White"
+                     Margin="0,0,0,40"
+          
+ >
+                    </Button>
+
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -73,6 +73,15 @@
 	  <Compile Update="AppShell.xaml.cs">
 	    <DependentUpon>AppShell.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\Longitud.xaml.cs">
+	    <DependentUpon>Longitud.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Moneda.xaml.cs">
+	    <DependentUpon>Moneda.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Volumen.xaml.cs">
+	    <DependentUpon>Volumen.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -88,7 +97,19 @@
 	  <MauiXaml Update="Views\AllNotesPage_DMO.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Dirrecion_DM.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Longitud.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Moneda.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\NotePageDMO.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Volumen.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
