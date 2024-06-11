@@ -1,52 +1,48 @@
-//using GameController;
-
-namespace AppNotesDanielaMoraMAUI.Views;
-
-public partial class Longitud : ContentPage
+namespace AppNotesDanielaMoraMAUI.Views
 {
-	public Longitud()
-	{
-		InitializeComponent();
-	}
-
-    private void CalcularKMD(object sender, EventArgs e)
+    public partial class Longitud : ContentPage
     {
-        string Kminput = cantidad_DM.Text;
-        string numerosKm = CalculoDC(Kminput);
-    }
-
-    private void CalcularDCD(object sender, EventArgs e)
-    {
-        string Dcinput = cantidad_DM.Text;
-        string numerosDc = CalculoDC(Dcinput);
-    }
-
-    private string CalculoKM(string Kminput)
-    {
-        if (double.TryParse(Kminput, out double kilometros))
+        public Longitud()
         {
-            double metros = kilometros * 1000;
-            return metros.ToString();
-
-        }
-        else
-        {
-            return "Valor mal añadido";
-        }
-    }
-
-    private string CalculoDC(string Dcinput)
-    {
-        if (double.TryParse(Dcinput, out double decimetros))
-        {
-            double metros = decimetros * 100;
-            return metros.ToString();
-
-        }
-        else
-        {
-            return "Valor mal añadido";
+            InitializeComponent();
         }
 
+        private void CalcularKMD(object sender, EventArgs e)
+        {
+            string Kminput = cantidad_DM.Text;
+            numerosKm.Text = CalculoKM(Kminput);
+        }
+
+        private void CalcularDCD(object sender, EventArgs e)
+        {
+            string Dcinput = cantidad_DM.Text;
+            numerosDc.Text = CalculoDC(Dcinput);
+        }
+
+        private string CalculoKM(string Kminput)
+        {
+            if (double.TryParse(Kminput, out double kilometros))
+            {
+                double metros = kilometros * 1000;
+                return metros.ToString();
+            }
+            else
+            {
+                return "Valor mal añadido";
+            }
+        }
+
+        private string CalculoDC(string Dcinput)
+        {
+            if (double.TryParse(Dcinput, out double decimetros))
+            {
+                double metros = decimetros * 100;
+                return metros.ToString();
+            }
+            else
+            {
+                return "Valor mal añadido";
+            }
+        }
     }
 }

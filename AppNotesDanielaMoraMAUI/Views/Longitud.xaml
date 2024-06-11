@@ -4,40 +4,38 @@
              x:Class="AppNotesDanielaMoraMAUI.Views.Longitud"
              Title="Longitud">
     <ScrollView>
-                <Grid BackgroundColor="Black">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
+        <Grid BackgroundColor="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-                    <StackLayout Margin="10,20,10,0" HorizontalOptions="Center">
+            <StackLayout Margin="10,20,10,0" HorizontalOptions="Center">
+                <Label Text="Ingrese la cantidad a transformar"
+                       TextColor="Black"
+                       FontSize="18"
+                       BackgroundColor="White"
+                       HorizontalTextAlignment="Center" />
 
-                        <Label Text="Ingrese La cantidad a trasnformar"
-                                TextColor="Black"
-                                FontSize="18"
-                                BackgroundColor="White"
-                                HorizontalTextAlignment="Center"></Label>
+                <Entry x:Name="cantidad_DM"
+                       Placeholder="Ingrese la cantidad"
+                       PlaceholderColor="Black"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
 
-                        <Entry x:Name="cantidad_DM"
-                                Placeholder="Ingrese la cantidad"
-                                PlaceholderColor="Black"
-                                HorizontalTextAlignment="Center"
-                                VerticalTextAlignment="Center"></Entry>     
+                <Label Text="Resultados:" FontSize="Title" FontAttributes="Bold" />
+                <Label x:Name="numerosKm" />
+                <Label x:Name="numerosDc" />
 
-                        <Label Text="Resultados:" FontSize="Title" FontAttributes="Bold"/>
-                        <Label x:Name="numerosKm" />
-                        <Label x:Name="numerosDc" />
+                <Button Text="Calcular a Kilometros"
+                        Clicked="CalcularKMD"
+                        BackgroundColor="DarkRed" />
 
-                        <Button Text="Calcular a Kilometros"
-                                 Clicked="CalcularKMD"
-                                 Background="DarkRed"></Button>
-
-                        <Button Text="Calcular A Decimetros"
-                                 Clicked="CalcularDCD"
-                                 Background="DarkRed"></Button>
-
+                <Button Text="Calcular a Decimetros"
+                        Clicked="CalcularDCD"
+                        BackgroundColor="DarkRed" />
             </StackLayout>
-                </Grid>
+        </Grid>
     </ScrollView>
 </ContentPage>
