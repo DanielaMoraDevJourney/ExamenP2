@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace AppNotesDanielaMoraMAUI.Models
 {
-    internal class NoteDMO
+    internal class Note_DMO
     {
+        public string? Filename_DMO { get; set; }
+        public string? Text_DMO { get; set; }
+        public DateTime Date_DMO { get; set; }
     }
 }

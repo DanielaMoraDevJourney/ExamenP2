@@ -1,4 +1,4 @@
-﻿namespace AppNotesDanielaMoraMAUI
+namespace AppNotesDanielaMoraMAUI
 {
     public partial class App : Application
     {
