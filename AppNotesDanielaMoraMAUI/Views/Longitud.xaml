@@ -4,7 +4,7 @@
              x:Class="AppNotesDanielaMoraMAUI.Views.Longitud"
              Title="Longitud">
     <ScrollView>
-                <Grid BackgroundColor="white">
+                <Grid BackgroundColor="Black">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
@@ -26,20 +26,15 @@
                                 VerticalTextAlignment="Center"></Entry>     
 
                         <Label Text="Resultados:" FontSize="Title" FontAttributes="Bold"/>
-                        <Label x:Name="numerosKM" />
-                        <Label x:Name="numerosM" />
+                        <Label x:Name="numerosKm" />
                         <Label x:Name="numerosDc" />
 
                         <Button Text="Calcular a Kilometros"
-                                 Clicked="CalcularKM"
+                                 Clicked="CalcularKMD"
                                  Background="DarkRed"></Button>
 
-                        <Button Text="Calcular"
-                                 Clicked="CalcularM"
-                                 Background="DarkRed"></Button>
-
-                        <Button Text="CalcularDC"
-                                 Clicked="Calcular"
+                        <Button Text="Calcular A Decimetros"
+                                 Clicked="CalcularDCD"
                                  Background="DarkRed"></Button>
 
             </StackLayout>

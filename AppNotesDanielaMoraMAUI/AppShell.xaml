@@ -31,7 +31,7 @@
         </ShellSection>
     </ShellItem>
 
-    <ShellItem Route="PaginaPrincipal">
+    <!--<ShellItem Route="PaginaPrincipal">
         <ShellSection Title="Página Principal">
             <ShellContent ContentTemplate="{DataTemplate views:Moneda}" />
         </ShellSection>
@@ -40,9 +40,7 @@
     <ShellItem Route="PaginaPrincipal">
         <ShellSection Title="Página Principal">
             <ShellContent ContentTemplate="{DataTemplate views:Volumen}" />
-        </ShellSection>
-    </ShellItem>
-
-
+        </ShellSection>-->
+    <!--</ShellItem>-->
 
 </Shell>

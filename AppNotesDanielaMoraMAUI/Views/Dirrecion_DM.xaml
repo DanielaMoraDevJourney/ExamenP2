@@ -38,7 +38,7 @@
                         >
                     </Button>
 
-                    <Button BackgroundColor="#8D2232"           
+                    <!--<Button BackgroundColor="#8D2232"           
                          WidthRequest="350"
                          HeightRequest="40"
                          FontFamily="PoppinsMedium" 
@@ -59,10 +59,10 @@
                      Text="Longitud"
                      Clicked="ClickLongitud"
                      TextColor="White"
-                     Margin="0,0,0,40"
+                     Margin="0,0,0,40"-->
           
- >
-                    </Button>
+ 
+                    <!--</Button>-->
 
                 </StackLayout>
             </Grid>

@@ -13,13 +13,13 @@ public partial class Dirrecion_DM : ContentPage
 
     }
 
-    private void ClickMoneda(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new Moneda());
-    }
+    //private void ClickMoneda(object sender, EventArgs e)
+    //{
+    //    Navigation.PushAsync(new Moneda());
+    //}
 
-    private void ClickLongitud(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new Volumen());
-    }
+    //private void ClickLongitud(object sender, EventArgs e)
+    //{
+    //    Navigation.PushAsync(new Volumen());
+    //}
 }

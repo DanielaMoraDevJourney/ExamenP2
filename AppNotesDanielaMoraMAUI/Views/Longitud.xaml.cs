@@ -1,3 +1,5 @@
+//using GameController;
+
 namespace AppNotesDanielaMoraMAUI.Views;
 
 public partial class Longitud : ContentPage
@@ -7,38 +9,44 @@ public partial class Longitud : ContentPage
 		InitializeComponent();
 	}
 
-    private void CalcularKM(object sender, EventArgs e)
+    private void CalcularKMD(object sender, EventArgs e)
     {
-        string input = cantidad_DM.Text;
-
-
+        string Kminput = cantidad_DM.Text;
+        string numerosKm = CalculoDC(Kminput);
     }
 
-    private void CalcularDC(object sender, EventArgs e)
+    private void CalcularDCD(object sender, EventArgs e)
     {
-        string input = cantidad_DM.Text;
-        int numerosKm = CalculoDC(input);
+        string Dcinput = cantidad_DM.Text;
+        string numerosDc = CalculoDC(Dcinput);
     }
 
-    private void CalcularM(object sender, EventArgs e)
+    private string CalculoKM(string Kminput)
     {
-        string input = cantidad_DM.Text;
-        int numerosKm = CalculoM(input);
-    }
-    private int CalculoKM(string input)
-    {
-        string input = cantidad_DM.Text;
+        if (double.TryParse(Kminput, out double kilometros))
+        {
+            double metros = kilometros * 1000;
+            return metros.ToString();
 
-
-    }
-
-    private int CalculoM(string input)
-    {
-       
+        }
+        else
+        {
+            return "Valor mal añadido";
+        }
     }
 
-    private int CalculoDC(string input)
+    private string CalculoDC(string Dcinput)
     {
-        
+        if (double.TryParse(Dcinput, out double decimetros))
+        {
+            double metros = decimetros * 100;
+            return metros.ToString();
+
+        }
+        else
+        {
+            return "Valor mal añadido";
+        }
+
     }
 }
