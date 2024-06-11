@@ -25,8 +25,9 @@
                        VerticalTextAlignment="Center" />
 
                 <Label Text="Resultados:" FontSize="Title" FontAttributes="Bold" />
-                <Label x:Name="numerosKm" />
-                <Label x:Name="numerosDc" />
+                <Label x:Name="numerosKm" TextColor="White" />
+                <Label x:Name="numerosDc" TextColor="White" />
+                <Label x:Name="numerosMm" TextColor="White" />
 
                 <Button Text="Calcular a Kilometros"
                         Clicked="CalcularKMD"
@@ -34,6 +35,10 @@
 
                 <Button Text="Calcular a Decimetros"
                         Clicked="CalcularDCD"
+                        BackgroundColor="DarkRed" />
+
+                <Button Text="Calcular a Milimetros"
+                        Clicked="CalcularMMD"
                         BackgroundColor="DarkRed" />
             </StackLayout>
         </Grid>
